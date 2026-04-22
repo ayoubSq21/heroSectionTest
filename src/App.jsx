@@ -56,12 +56,12 @@ function App() {
           <a href="#" className="nav-link">Contact</a>
         </div>
         <div className="nav-icons">
-          <button onClick={() => setIsDarkMode(!isDarkMode)} aria-label="Toggle Dark Mode" style={{ display: 'flex', alignItems: 'center' }}>
+          <button className="icon-wrapper" onClick={() => setIsDarkMode(!isDarkMode)} aria-label="Toggle Dark Mode">
             {isDarkMode ? <SunIcon /> : <MoonIcon />}
           </button>
-          <a href="#" aria-label="Search"><SearchIcon /></a>
-          <a href="#" aria-label="Cart"><CartIcon /></a>
-          <a href="#" aria-label="Account"><UserIcon /></a>
+          <a href="#" className="icon-wrapper" aria-label="Search"><SearchIcon /></a>
+          <a href="#" className="icon-wrapper" aria-label="Cart"><CartIcon /></a>
+          <a href="#" className="icon-wrapper" aria-label="Account"><UserIcon /></a>
         </div>
       </nav>
 
@@ -70,20 +70,20 @@ function App() {
         {/* Left Column: Text */}
         <div className="hero-content">
           <span className="subtitle">NEW ARRIVAL PRODUCTS</span>
-          <h1 className="main-title">The Best Look<br/>Anytime Anywhere</h1>
+          <h1 className="main-title">The Best Look<br />Anytime Anywhere</h1>
           <p className="description">
-            Discover our latest collection designed for elegance and comfort. 
-            Elevate your style with pieces that speak confidence and let you 
+            Discover our latest collection designed for elegance and comfort.
+            Elevate your style with pieces that speak confidence and let you
             stand out in every occasion.
           </p>
-          
+
           <div className="hero-actions">
             <button className="btn-primary">Shop Now</button>
             <button className="btn-secondary">
               Get Started
             </button>
           </div>
-          
+
           <div className="arrow-container">
             <WavyArrow />
           </div>
